@@ -30,19 +30,6 @@ console.log(results);*/
   ); 
 */
 
-/*function NameList(props) {  
-  const message = props.message;  
-  const listItems = message.map((message) =>  
-    <li>{message}</li>  
-  ); 
-  return (  
-    <div>  
-        <h2>Rendering Lists inside component</h2>  
-              <ul>{listItems}</ul>  
-    </div>  
-  );
-}*/
-
 function ChatRoom() {
 
   const dummy = useRef();
@@ -84,14 +71,12 @@ function ChatRoom() {
   
 }
 
-
 function ChatMessage(props) {
 
   const{ text } = props.message;
 
   return (<>
     <div>
-      <img src={'https://api.adorable.io/avatars/23/abott@adorable.png'} />
       <p>{text}</p>
     </div>
   </>)
