@@ -50,9 +50,9 @@ function ChatRoom() {
   const [formValue, setFormValue] = useState('');
 
   const sendMessage = async(e) => {
-    e.preventDefault();
+    e.preventDefault(); //le curseur est toujours dispo après l'envoi d'un message
 
-    setFormValue('');
+    setFormValue(''); //pour réinitialiser la barre de message
 
     dummy.current.scrollIntoView({ behavior: 'smooth' });
 
@@ -74,9 +74,6 @@ function ChatRoom() {
 
         <button type="submit">sumbit</button>
         
-
-
-
       </form>
     
     
@@ -98,7 +95,6 @@ function ChatMessage(props) {
       <p>{text}</p>
     </div>
   </>)
-  
 }
 
 export default App;
